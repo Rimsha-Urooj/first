@@ -8,6 +8,14 @@ import React from 'react'
 
 // Arrow Function
 
-const Greet = () => <h1>Hey Rimsha Urooj</h1> 
+const Greet = (props) => {
+    return (
+        <div>
+            <h1>Greetings {props.name} your hero is {props.heroName}</h1>
+            {props.children}
+        </div>
+         
+    )
+}
 
 export default Greet

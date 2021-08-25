@@ -2,7 +2,11 @@ import React, { Component } from 'react'
 
 class Welcome extends Component{
     render(){
-        return <h2>I am Software Engineer</h2>
+        return (
+        <h2>
+            Welcome {this.props.name} and your hero {this.props.heroName}
+        </h2>
+        )
     }
 
 }
