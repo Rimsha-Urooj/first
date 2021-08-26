@@ -9,10 +9,15 @@ import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
 import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
+import UserGreetingComponent from './components/UserGreetingComponent';
 
 function App() {
   return (
     <div className="App">
+
+      {/* Conditional Rendering 4 approaches */}
+      <UserGreetingComponent />
+
       {/* Methods used as props  */}
       <ParentComponent />
 
