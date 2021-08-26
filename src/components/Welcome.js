@@ -2,9 +2,11 @@ import React, { Component } from 'react'
 
 class Welcome extends Component{
     render(){
+        // Destructuring props 
+        const {name,heroName} = this.props;
         return (
         <h2>
-            Welcome {this.props.name} and your hero {this.props.heroName}
+            Welcome {name} and your hero {heroName}
         </h2>
         )
     }
@@ -12,3 +14,6 @@ class Welcome extends Component{
 }
 
 export default Welcome
+
+// Destructuring State
+// const {state1, state2} = this.state;
