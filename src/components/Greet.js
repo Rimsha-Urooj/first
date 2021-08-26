@@ -24,7 +24,7 @@ const Greet = ({name,heroName}) => {
 // => const Greet =(props) => {} transformed into => const Greet=({name, heroName})=> {}
 // 2. is to destructure in function body
 // => const Greet = (props) =>{
-//      const name, heroName = props;
+//      const {name, heroName} = props;
 // }
 
 export default Greet
