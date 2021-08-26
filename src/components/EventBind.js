@@ -24,7 +24,7 @@ class EventBind extends Component {
     // Arrow function as a class property method for 4th approch
     clickHandler = () => {
         this.setState({
-            message: 'Goog Bye',
+            message: 'Good Bye',
         })
     }
 
