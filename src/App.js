@@ -5,10 +5,14 @@ import Welcome from './components/Welcome';
 import Hello from './components/Hello';
 import Message from './components/Message';
 import Counter from './components/Counter';
+import FunctionClick from './components/FunctionClick';
 
 function App() {
   return (
     <div className="App">
+      {/* Event Handling with functional component */}
+      <FunctionClick />
+
       {/* setState Concept */}
       <Counter />
 
