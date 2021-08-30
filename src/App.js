@@ -13,11 +13,22 @@ import UserGreetingComponent from './components/UserGreetingComponent';
 import NameList from './components/NameList';
 import Stylesheet from './components/Stylesheet';
 import Inline from './components/Inline';
+import './appStyles.css'
+// Importing modules.css file
+import styles from './appStyles.module.css'
+
 
 function App() {
   return (
     <div className="App">
 
+      
+      {/* Regular Styling */}
+      <h1 className='error'>Error </h1>
+
+      {/* CSS Modules Styling */}
+      {/* <h1 className={styles.success}>Success</h1> */}
+      <h1 className={styles.success}>Success</h1>
       {/* Inline Styling */}
       <Inline />
 
