@@ -2,8 +2,8 @@ import React from 'react'
 import Person from './Person'
 
 function NameList() {
-    const names = ['Bruce', 'Clark', 'Diana']
-    const nameList = names.map(name => <h2>{name}</h2>)
+    // const names = ['Bruce', 'Clark', 'Diana']
+    // const nameList = names.map(name => <h2>{name}</h2>)
     const persons = [
         {
             id: 1,
@@ -28,7 +28,8 @@ function NameList() {
     // const personList = persons.map(person => <h2>I am {person.name}. I am {person.age} years old. I am having skills in {person.skills}</h2>)
     
     // Refactoring person
-    const personList = persons.map(person=> <Person person={person}/>)
+    // Adding key props
+    const personList = persons.map(person=> <Person key={person.skills} person={person}/>)
     return (
         <div>
             {/* Simple Method */}
