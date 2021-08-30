@@ -16,52 +16,54 @@ import Inline from './components/Inline';
 import './appStyles.css'
 // Importing modules.css file
 import styles from './appStyles.module.css'
-
+import Form from './components/Form';
 
 function App() {
   return (
     <div className="App">
 
-      
+      {/* Form Handling */}
+      <Form />
+
       {/* Regular Styling */}
-      <h1 className='error'>Error </h1>
+      {/* <h1 className='error'>Error </h1> */}
 
       {/* CSS Modules Styling */}
       {/* <h1 className={styles.success}>Success</h1> */}
-      <h1 className={styles.success}>Success</h1>
+      {/* <h1 className={styles.success}>Success</h1> */}
       {/* Inline Styling */}
-      <Inline />
+      {/* <Inline /> */}
 
       {/* Styling and CSS basics */}
       {/* Styling with props */}
-      <Stylesheet primary={true} />
+      {/* <Stylesheet primary={true} /> */}
 
       {/* List Rendering */}
-      <NameList />
+      {/* <NameList /> */}
 
       {/* Conditional Rendering 4 approaches */}
-      <UserGreetingComponent />
+      {/* <UserGreetingComponent /> */}
 
       {/* Methods used as props  */}
-      <ParentComponent />
+      {/* <ParentComponent /> */}
 
       {/* Binding Event Handler */}
-      <EventBind />
+      {/* <EventBind /> */}
 
       {/* Event Handling with class components */}
-      <ClassClick />
+      {/* <ClassClick /> */}
 
       {/* Event Handling with functional component */}
-      <FunctionClick />
+      {/* <FunctionClick /> */}
 
       {/* setState Concept */}
-      <Counter />
+      {/* <Counter /> */}
 
       {/* State Concpet */}
-      <Message />
+      {/* <Message /> */}
 
       {/* Functional component with props */}
-      <Greet name="Bruce" heroName="Batman">
+      {/* <Greet name="Bruce" heroName="Batman">
         <p>This is children props.</p>
       </Greet>
 
@@ -69,15 +71,15 @@ function App() {
         <button>Action</button>
       </Greet>
 
-      <Greet name="David" heroName="Spiderman" />
+      <Greet name="David" heroName="Spiderman" /> */}
 
 
       {/* Class Components with props */}
-      <Welcome name="Lana" heroName="Batman" />
+      {/* <Welcome name="Lana" heroName="Batman" />
       <Welcome name="Emma" heroName="Batman" />
       <Welcome name="Melisa" heroName="Batman" />
 
-      <Hello />
+      <Hello /> */}
     </div>
   );
 }
