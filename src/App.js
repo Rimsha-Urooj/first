@@ -17,13 +17,17 @@ import './appStyles.css'
 // Importing modules.css file
 import styles from './appStyles.module.css'
 import Form from './components/Form';
+import LifeCycleA from './components/LifeCycleA';
 
 function App() {
   return (
     <div className="App">
 
+      {/* Component Mounting Lifecycle methods */}
+      <LifeCycleA />
+
       {/* Form Handling */}
-      <Form />
+      {/* <Form /> */}
 
       {/* Regular Styling */}
       {/* <h1 className='error'>Error </h1> */}
