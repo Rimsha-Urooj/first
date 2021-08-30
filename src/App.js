@@ -10,10 +10,14 @@ import ClassClick from './components/ClassClick';
 import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
 import UserGreetingComponent from './components/UserGreetingComponent';
+import NameList from './components/NameList';
 
 function App() {
   return (
     <div className="App">
+
+      {/* List Rendering */}
+      <NameList />
 
       {/* Conditional Rendering 4 approaches */}
       <UserGreetingComponent />
