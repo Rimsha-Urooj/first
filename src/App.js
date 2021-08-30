@@ -12,10 +12,14 @@ import ParentComponent from './components/ParentComponent';
 import UserGreetingComponent from './components/UserGreetingComponent';
 import NameList from './components/NameList';
 import Stylesheet from './components/Stylesheet';
+import Inline from './components/Inline';
 
 function App() {
   return (
     <div className="App">
+
+      {/* Inline Styling */}
+      <Inline />
 
       {/* Styling and CSS basics */}
       {/* Styling with props */}
