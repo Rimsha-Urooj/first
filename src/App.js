@@ -20,16 +20,19 @@ import Form from './components/Form';
 import LifeCycleA from './components/LifeCycleA';
 import FragmentDemo from './components/FragmentDemo';
 import Table from './components/Table';
+import ParentComp from './components/ParentComp';
 
 function App() {
   return (
     <div className="App">
+      {/* Pure Component */}
+      <ParentComp />
 
       {/* Fragments 1st Example*/}
-      <FragmentDemo />
+      {/* <FragmentDemo /> */}
 
       {/* Fragments 2nd Example */}
-      <Table />
+      {/* <Table /> */}
 
       {/* Component Mounting Lifecycle methods */}
       {/* <LifeCycleA /> */}
