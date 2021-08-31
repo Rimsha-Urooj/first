@@ -18,13 +18,21 @@ import './appStyles.css'
 import styles from './appStyles.module.css'
 import Form from './components/Form';
 import LifeCycleA from './components/LifeCycleA';
+import FragmentDemo from './components/FragmentDemo';
+import Table from './components/Table';
 
 function App() {
   return (
     <div className="App">
 
+      {/* Fragments 1st Example*/}
+      <FragmentDemo />
+
+      {/* Fragments 2nd Example */}
+      <Table />
+
       {/* Component Mounting Lifecycle methods */}
-      <LifeCycleA />
+      {/* <LifeCycleA /> */}
 
       {/* Form Handling */}
       {/* <Form /> */}
