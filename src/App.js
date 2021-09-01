@@ -25,14 +25,27 @@ import PortalDemo from './components/PortalDemo';
 // import RefsDemo from './components/RefsDemo';
 // import FocusInput from './components/FocusInput';
 // import FRParentInput from './components/FRParentInput';
+import Hero from './components/Hero';
+import ErrorBoundry from './components/ErrorBoundry';
 
 
 function App() {
   return (
     <div className="App">
 
+      {/* Error Boundary */}
+      <ErrorBoundry>
+        <Hero heroName='Batman'></Hero>
+      </ErrorBoundry>
+      <ErrorBoundry>
+        <Hero heroName='Superman'></Hero>
+      </ErrorBoundry>
+      <ErrorBoundry>  
+        <Hero heroName='Joker'></Hero>
+      </ErrorBoundry>
+
       {/* Portal Demo */}
-      <PortalDemo />
+      {/* <PortalDemo /> */}
 
       {/* Forwarding Refs */}
       {/* <FRParentInput /> */}
