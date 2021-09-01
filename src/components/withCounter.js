@@ -1,6 +1,6 @@
 import React from 'react'
 
-const withCounter = (WrappedComponent) => {
+const withCounter = (WrappedComponent, incrementNumber) => {
     class WithCounter extends React.Component {
 
         constructor(props) {
@@ -9,18 +9,22 @@ const withCounter = (WrappedComponent) => {
             this.state = {
                 count:0
             }
+
+            console.log(this.props.name)
         }
     
         incrementCount = () => {
             this.setState(prevState => {
                 return {
-                    count: prevState.count+1
+                    count: prevState.count+incrementNumber
                 }
             })
         }
 
         render() {
-            return <WrappedComponent count={this.state.count} incrementCount ={this.incrementCount} />
+            return <WrappedComponent 
+                        count={this.state.count} incrementCount ={this.incrementCount} {...this.props}>
+                    </WrappedComponent>
         }
     }
     return WithCounter

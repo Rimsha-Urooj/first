@@ -36,7 +36,7 @@ function App() {
     <div className="App">
 
       {/* Higher Order Components p1 */}
-      <ClickCounter />
+      <ClickCounter name ="Rimsha" />
       <HoverCounter />
       {/* Error Boundary */}
       {/* <ErrorBoundry>
