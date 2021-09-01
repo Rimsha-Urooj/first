@@ -27,14 +27,19 @@ import PortalDemo from './components/PortalDemo';
 // import FRParentInput from './components/FRParentInput';
 import Hero from './components/Hero';
 import ErrorBoundry from './components/ErrorBoundry';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
 
 
 function App() {
   return (
     <div className="App">
 
+      {/* Higher Order Components p1 */}
+      <ClickCounter />
+      <HoverCounter />
       {/* Error Boundary */}
-      <ErrorBoundry>
+      {/* <ErrorBoundry>
         <Hero heroName='Batman'></Hero>
       </ErrorBoundry>
       <ErrorBoundry>
@@ -42,7 +47,7 @@ function App() {
       </ErrorBoundry>
       <ErrorBoundry>  
         <Hero heroName='Joker'></Hero>
-      </ErrorBoundry>
+      </ErrorBoundry> */}
 
       {/* Portal Demo */}
       {/* <PortalDemo /> */}
